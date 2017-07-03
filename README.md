@@ -1,5 +1,5 @@
 # Phing Plugin for inetprocess/docker-lamp
-Plugin made by Inet Process to run [phing](https://www.phing.info/ on the current directory
+Plugin made by Inet Process to run [phing](https://www.phing.info/) on the current directory
 
 __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/phing)
 
