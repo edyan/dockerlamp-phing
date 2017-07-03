@@ -17,6 +17,6 @@ The `lamp phing` command must be launched from the directory that contains the *
 As the report is generated inside a container, the permissions are set to root, to be able to delete the report folder,
 do the following as the final task in your `build.xml`:
 ```xml
-    <!-- As we use a docker image, force the right uid / gid at the end on the report directory -->
+    <!-- As we use a docker image, make the current user able to read / delete the report -->
     <chmod file="report" mode="0777" />
 ```
