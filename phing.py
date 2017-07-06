@@ -8,7 +8,7 @@ from lib import command
 @click.command(help="Run Phing with the build.xml file located in the current directory", name="phing")
 @click.pass_context
 def phing(ctx):
-    # Insert the parent lamp dir in path to get lib/command.py
+    # Insert the parent marina dir in path to get lib/command.py
     sys.path.insert(0,'../..')
 
     current_dir = os.getcwd()
