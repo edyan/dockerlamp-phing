@@ -1,13 +1,13 @@
-# Phing Plugin for inetprocess/docker-lamp
+# Phing Plugin for inetprocess/marina
 Plugin made by Inet Process to run [phing](https://www.phing.info/) on the current directory
 
 __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/phing)
 
 # Installation
-Clone the repository in the plugins/ directory of your docker-lamp
+Clone the repository in the plugins/ directory of your marina directory
 ```bash
 $ cd plugins/
-$ git clone https://github.com/inetprocess/docker-lamp-composer composer
+$ git clone https://github.com/inetprocess/marina-composer composer
 $ lamp refresh-plugins
 ```
 
