@@ -1,4 +1,4 @@
-# Phing Plugin for inetprocess/marina
+# Phing Plugin for edyan/marina
 Plugin made by Inet Process to run [phing](https://www.phing.info/) on the current directory
 
 __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/phing)
@@ -7,7 +7,7 @@ __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/
 Clone the repository in the plugins/ directory of your marina
 ```bash
 $ cd plugins/
-$ git clone https://github.com/inetprocess/marina-phing phing
+$ git clone https://github.com/edyan/marina-phing phing
 $ marina refresh-plugins
 ```
 
