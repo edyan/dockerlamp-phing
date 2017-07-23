@@ -1,11 +1,11 @@
 from setuptools import setup
 
 setup(
-    name='MarinaPhing',
+    name='StakkrPhing',
     version='1.0',
     packages=['phing'],
     entry_points='''
-        [marina.plugins]
+        [stakkr.plugins]
         phing=phing.core:phing
     '''
 )
