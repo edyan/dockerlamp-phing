@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='StakkrPhing',
-    version='1.0',
+    version='3.0',
     packages=['phing'],
     entry_points='''
         [stakkr.plugins]
