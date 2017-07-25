@@ -10,8 +10,11 @@ def phing(ctx):
     stakkr = ctx.obj['STAKKR']
     stakkr.check_cts_are_running()
 
+    print('Pulling image', end='')
+    command.launch_cmd_displays_output(['docker', 'pull', 'edyan/phing'], False, False)
+    print('Done')
+
     tty = 't' if sys.stdin.isatty() else ''
     cmd = ['docker', 'run', '-i' + tty, '--rm', '--volume', stakkr.current_dir + ':' + stakkr.current_dir]
     cmd += ['edyan/phing', 'phing', '-f', stakkr.current_dir + '/build.xml']
-
     command.launch_cmd_displays_output(cmd, True, True)
