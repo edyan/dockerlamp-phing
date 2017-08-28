@@ -3,10 +3,11 @@ Phing plugin for stakkr"""
 
 import sys
 import click
-from stakkr import command, docker
+from stakkr import command, docker_actions
 
 
-@click.command(help="Run Phing with the build.xml file located in the current directory", name="phing")
+@click.command(help="""Run Phing with the build.xml file located in the
+current directory""", name="phing")
 @click.pass_context
 def phing(ctx):
     """See command help"""
@@ -14,7 +15,7 @@ def phing(ctx):
     stakkr = ctx.obj['STAKKR']
     verb = stakkr.context['VERBOSE']
     debug = stakkr.context['DEBUG']
-    docker.check_cts_are_running(stakkr.project_name)
+    docker_actions.check_cts_are_running(stakkr.project_name)
 
     print('Pulling image')
     command.launch_cmd_displays_output(['docker', 'pull', 'edyan/phing'], verb, debug)
