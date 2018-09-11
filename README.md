@@ -1,5 +1,5 @@
-# Phing Plugin for edyan/stakkr
-Plugin made by Inet Process to run [phing](https://www.phing.info/) on the current directory
+# Phing Plugin for stakkr-org/stakkr
+Plugin made to run [phing](https://www.phing.info/) on the current directory
 
 __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/phing)
 
@@ -7,7 +7,7 @@ __WARNING: The plugin directory must be named `phing`__ (complete path: plugins/
 Clone the repository in the plugins/ directory of your stakkr
 ```bash
 $ cd plugins/
-$ git clone https://github.com/edyan/stakkr-phing phing
+$ git clone https://github.com/stakkr-org/stakkr-phing phing
 $ stakkr refresh-plugins
 ```
 
